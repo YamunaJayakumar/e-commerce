@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+    z-index: 1;
+}
+.nav-items{
+   list-style-type: none;
+}
+.link {
+    text-decoration: none;
+    list-style-type: none; 
+    color: rgb(96, 46, 10);
+    font-size: 1.13rem; 
+}
+.link:hover{
+    color: black;
+}
+.home{
+    margin-top: 2.7rem;
+}
+.logo{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 700;
+    color: rgb(96, 46, 10);
+}
+.home-h1,.new-arrival-h2,.wall-decor-header-h1{
+    color:  rgb(96, 46, 10);
+    font-weight: 700;
+}
+.cat-span:hover{
+    color: chocolate;
+
+}
+.wall-item-one-p:hover{
+      color: chocolate;
+}
+.home-img{
+    width: 100%;
+    
+}
+.category-content-item{
+    object-fit: cover;
+}
+.cat-img{
+    border-radius:5rem;
+     width: 15rem;
+     height: 15rem;
+
+}
+.cat-img,.wall-sale{
+    
+    width: 100%;   
+}
+.wall-item-one{
+        width: 100%; 
+        height: 77%; 
+        
+}
+.wall-sale{
+  
+    height: 100%;
+}
+.new-arrival-one{
+    border: solid;
+}
+.new-arrival-content{
+    overflow: auto;
+    width:100%;
+    white-space: nowrap;
+
+}
+.new-arrival-content-item{
+    /* border: solid; */
+    display: inline-block;
+    width:20rem;
+    background-color:rgb(224, 205, 191);
+}
+.wall-item{
+    border: solid;
+    border-color:rgb(245, 243, 242);
+    background-color: rgb(252, 247, 241);
+    
+    
+}
+.wall-item:hover{
+    
+    box-shadow: 1px 2px 1px rgb(0, 0, 0,.4);
+ 
+}
+.seller-item{
+    padding: 1rem;
+    
+    width:25rem;
+    box-shadow: 1px 1px 1px rgb(200, 200, 200);
+}
+.seller-one{
+    
+    width: 100%;
+    height: 80%;
+}
+.wall-button{
+    align-self: center;
+    width: 50%;
+    padding: .2rem;
+    border: solid chocolate;
+    background-color: chocolate;
+    border-radius: 5px;
+}
+.wall-button:hover{
+    color:white;
+    background-color: black;
+    border:solid black;
+}
+.dining-item{
+    border: solid rgb(255, 255, 255);
+    height: 18rem;
+    background-color: white;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease-in-out;
+    
+}
+.dining-item:hover{
+   transform: translateY(-5px);
+   box-shadow: 2px 3px 3px gainsboro;
+}
+.dining-img{
+    width: 100%;
+    height: 80%;
+}   
+.outdoor-content{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+   
+} 
+.outdoor-item{
+   
+    background-color: white;
+    border-radius: .3rem;
+    display: inline-block;
+    
+   
+}
+
+.deal-content{
+    width: 100%;
+}
+.deal{
+    width: 100%;
+}
+
+.trends-item{
+  position: relative;
+  width: 100%;
+}
+.t1-img{
+ display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay{
+ position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+ transition: .5s ease;
+background-color:rgba(255, 255, 255, 0.7);
+}
+.text {
+  color: rgb(86, 42, 11);
+  font-size: 20px;
+  position: absolute;
+  text-align:center;
+  top: 50%;
+  left: 15%;
+}
+.trends-item:hover .overlay {
+  opacity: 1;
+}
+.footer{
+     background-color: rgb(255, 244, 244);
+}
+.footer-header{
+    font-size: medium;
+    color: black;
+    font-weight: 700;
+}
+.footer-item,.footer-header,.foot{
+    color: rgb(49, 47, 47);
+}
+.footer-item:hover{
+    color: black;
+}
+@media (min-width:768px) {
+   .category-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:4rem;
+   } 
+    
+}

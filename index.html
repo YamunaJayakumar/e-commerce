@@ -1,11 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ecommerce Website</title>
+    <!-- tailwindcss script-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontaswome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+AU+QLD:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+AU+QLD:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- navbar -->
+    <nav class="flex item-center justify-between px-4 py-6 navbar ">
+        <div class="logo text-2xl ">Wooden Street<sub class="text-xs">with love</sub></div>
+        <ul class="nav-items flex flex-wrap item-center text-xl">
+            <a href="#cat " class="link px-2">categories</a>
+            <a href="#best" class="link px-2">best-seller</a>
+            <a href="#new" class="link px-2">new-arrival</a>
+            <a href="#trend" class="link px-2">trends</a>
+        </ul>
+        <ul class="nav-items flex item-center">
+            <li class="item-icons"><i class="fa-solid fa-circle-user px-4"></i> </li>
+            <li class="item-icons"><i class="fa-solid fa-store px-4"></i> </li>
+            <li class="item-icons"><i class="fa-solid fa-cart-shopping px-4"></i></li>
+            <li class="item-icons"><i class="fa-solid fa-heart px-4"></i></li>
+        </ul>
+    </nav>
+    <section class="home flex flex-wrap justify-center item-center">
+        <img src="./images/homee.webp" class="home-img py-1 px-1 " alt="">
+    </section>
+    <section class="specialities">
+        <div>
+            <img src="./images/emi-banner (1).jpg" alt="">
+        </div>
+    </section>
+    <section class="category pt-8 " id="cat">
+        <div class="category-header flex flex-col justify-center  item-center">
+            <div class="category-header-h2 text-center">
+                <h1 class="text-2xl home-h1 md:text-2xl lg:text-3xl  home-h1">Home decor</h1>
+            </div>
+            <div class="category-header-p text-center">
+                <p class="text-xs px-16 md:text-base text-justify p-16 md:text-center text-xs pt-2">Home Decor is the
+                    most important segment in setting the complete ambiance of your home.</p>
+            </div>
+        </div>
+        <div
+            class="category-content grid grid-cols-1 grid-rows-1 gap-4 p-16 md:grid-cols-2 grid-rows-2 gap-4 lg:grid-cols-4 grid-rows-2 gap-4 pt-4">
+            <div class="category-content-item flex flex-wrap flex-col justify-center  item-center m-8 ">
+                <img src="./images/selve.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Wall shelves</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center m-8 ">
+                <img src="./images/temple.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Home Temple</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center m-8 "> <img
+                    src="./images/clock.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Wall Clock</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center m-8 "> <img
+                    src="./images/frames.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Photo Frames</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center m-8 "> <img
+                    src="./images/keyholders.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Key Holders</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center m-8 "> <img
+                    src="./images/mirror.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Wall Mirrors</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center  m-8"> <img
+                    src="./images/tableware.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Table Wares</span>
+            </div>
+            <div class="category-content-item flex  flex-col justify-center  item-center m-8 "> <img
+                    src="./images/potts.jpg" alt="" class="cat-img">
+                <span class="text-center cat-span">Pot & Planters</span>
+            </div>
+
+        </div>
+    </section>
+    <!-- deals -->
+    <section class="deal px-5">
+        <div class="deal-header">
+            <h1 class="text-2xl home-h1 md:text-2xl lg:text-3xl  home-h1 text-center">Deals of the Day</h1>
+        </div>
+        <div
+            class="deal-content grid grid-cols-1 grid-rows-1 py-2 md:grid grid-cols-2 grid-rows-1 py-2 lg:grid grid-cols-1 grid-rows-1 py-2">
+
+            <div>
+                <img src="./images/deal1.webp" class="deal" alt="">
+            </div>
+
+            <div>
+                <img src="./images/deal2.webp" class="deal" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="new-arrivals m-16" id="new">
+        <div class="new-arrival-header">
+            <h2 class="pt-8  new-arrival-h2 text-center text-2xl home-h1 md:text-2xl lg:text-3xl ">New Arrivals</h2>
+            <h6 class="new-arrival-span text-center">Shop Before They Become Old</h6>
+        </div>
+        <div class="new-arrival-content my-8 py-4 ">
+            <div class="p-2 new-arrival-content-item">
+                <img class="ariival-img" src="./images/arr2.jpg" alt="">
+                <p class="text-sm">Graceful Mask Table Decor (Gold, L)</p>
+                <div class="arrival-span flex justify-between item-center">
+                    <span class="text-sm">₹4,699
+                        <s class="text-sm">₹8,999</s>
+
+                    </span>
+                    <span class="text-sm text-green-800">
+                        48% Off
+                    </span>
+                </div>
+            </div>
+            <div class="p-2 new-arrival-content-item">
+                <img class="ariival-img" src="./images/arr.jpg" alt="">
+                <p class="text-sm">Bridger Premium Solid Wood Sofa Arm Tray</p>
+                <div class="arrival-span flex justify-between item-center">
+                    <span class="text-sm">₹839
+                        <s class="text-sm">₹1,141</s></span>
+                    <span class="text-sm text-green-800 text-sm">20%off</span>
+                </div>
+            </div>
+            <div class="p-2 new-arrival-content-item">
+                <img src="./images/arrival-7.jpg" class="ariival-img" alt="">
+                <p class="text-sm">Luci Wall Shelf with Key Holders</p>
+                <div class="arrival-span flex justify-between item-center">
+                    <span class="text-sm">₹5,299 <s class="text-sm">₹1,141</s></span>
+                    <span class="text-green-800 text-sm">20%off</span>
+                </div>
+            </div>
+            <div class="p-2 new-arrival-content-item">
+                <img class="ariival-img" src="./images/arrival5.jpg" alt="">
+                <p class="text-sm">Sleek Cage Console Table Decor</p>
+                <div class="arrival-span flex justify-between item-center">
+                    <span>₹1,899
+                        <s>₹5,888</s>
+                    </span>
+                    <span class="text-green-800 text-sm">68% Off</span>
+                </div>
+            </div>
+            <!-- jkjk -->
+            <div class="p-2 new-arrival-content-item">
+                <img class="ariival-img" src="./images/arrival4.jpg" alt="">
+                <p> Ceramic Pot With Artificial Flowers</p>
+                <div class="arrival-span flex justify-between item-center">
+                    <span>₹399
+                        <s>₹699</s></span>
+                    <span class="text-green-800 text-sm">43% Off</span>
+                </div>
+            </div>
+            <div class="p-2 new-arrival-content-item">
+                <img class="ariival-img" src="./images/arrival1.jpg" alt="">
+                <p>Verdant Glass Vase- Set of 2</p>
+                <div class="arrival-span flex justify-between item-center">
+                    <span>₹1,629
+                        <s>₹2,399</s></span>
+                    <span class="text-green-800 text-sm">32% Off</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="walldecor m-16">
+        <div class=" p-8 wall-decor-header flex flex-col my-4 py-4">
+            <h1 class="text-center text-2xl home-h1 md:text-2xl lg:text-3xl  wall-decor-header-h1">walldecor</h1>
+            <p class="text-center">Shop Before They Become Old</p>
+        </div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-1 gap-4 lg:grid-cols-2 gap-4">
+            <div class="walldecor-header flex justify-center item-center">
+                <img class="wall-sale" src="./images/wall decor sale.jpg" alt="">
+            </div>
+            <div
+                class="walldecor-content  grid grid-cols-1 grid-rows-1 gap-4 p-16 md:grid-cols-2 grid-rows-1 gap-4 lg:grid-cols-3 grid-rows-1 gap-4 p-4">
+                <div class="wall-item flex flex-col justify-center item-center my-5">
+                    <img class="wall-item-one" src="./images/wall1.jpg" alt="">
+                    <p class="text-center wall-item-one-p ">Wall Art</p>
+                    <span class="text-center text-xs">(302 Products)</span>
+                    <button class="text-xs wall-button">Add to cart</button>
+                </div>
+                <div class="wall-item flex flex-col justify-center item-center my-5">
+                    <img class="wall-item-one" src="./images/deccor-wall1.jpg" alt="">
+                    <p class="text-center wall-item-one-p ">Metal Wall Art</p>
+                    <span class="text-center text-xs">(322 Products)</span>
+                    <button class="text-xs wall-button">Add to cart</button>
+                </div>
+
+                <div class="wall-item my-5 flex flex-col justify-center item-center my-5">
+                    <img class="wall-item-one" src="./images/decor2.jpg" alt="">
+                    <p class="text-center wall-item-one-p ">Wall Paintings</p>
+                    <span class="text-center text-xs">(422 Products)</span>
+                    <button class="text-xs wall-button">Add to cart</button>
+                </div>
+                <div class="wall-item my-5 flex flex-col justify-center item-center my-5">
+                    <img class="wall-item-one" src="./images/decor3.jpg" alt="">
+                    <p class="text-center  wall-item-one-p">Wall Clocks</p>
+                    <span class="text-center text-xs">(222 Products)</span>
+                    <button class="text-xs wall-button">Add to cart</button>
+                </div>
+                <div class="wall-item my-5 flex flex-col justify-center item-center my-5">
+                    <img class="wall-item-one" src="./images/decor4.jpg" alt="">
+                    <p class="text-center wall-item-one-p ">Wall Plates</p>
+                    <span class="text-center text-xs">(122 Products)</span>
+                    <button class="text-xs wall-button">Add to cart</button>
+                </div>
+                <div class="wall-item my-5 flex flex-col justify-center item-center my-5">
+                    <img class="wall-item-one" src="./images/walldecor item.jpg" alt="">
+                    <p class="text-center wall-item-one-p ">Photo Frames</p>
+                    <span class="text-center text-xs">(352 Products)</span>
+                    <button class="text-xs wall-button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="./images/strip-furniture.jpg" class="w-100" alt="">
+    <section class="best-sellar m-16" id="best">
+        <div class="best-sellar-header p-8 ">
+            <h1 class="text-center text-2xl home-h1 md:text-2xl lg:text-3xl ">Top Selling Home Decor Items</h1>
+            <p class="text-center">These Sell Like Hot Cakes</p>
+        </div>
+        <div
+            class="best-sellar-content grid grid-cols-1 grid-rows-1 gap-4  md:grid-cols-2 grid-rows-1 gap-4 lg:grid-cols-3 grid-rows-1 gap-4">
+            <div class="seller-item">
+                <img src="./images/bestseller-one.jpg" alt="" class="seller-one">
+                <p class="text-xl">Artificial Plants and Flower</p>
+                <span class="text-sm">1000+ Options, Starting at 179</span>
+            </div>
+            <div class="seller-item">
+                <img src="./images/sellar2.webp" alt="" class="seller-one">
+                <p class="text-xl">Metal Wall Art</p>
+                <span class="text-sm">1500+ Options, Starting at 349-></span>
+            </div>
+            <div class="seller-item">
+                <img src="./images/shelv.webp" alt="" class="seller-one">
+                <p class="text-xl">Wall Shelves</p>
+                <span class="text-sm">1008+ Options, Starting at 179</span>
+            </div>
+            <div class="seller-item">
+                <img src="./images/gard.webp" alt="" class="seller-one">
+                <p class="text-xl ">Gardening</p>
+                <span class="text-sm">1000+ Options, Starting at 179</span>
+            </div>
+            <div class="seller-item">
+                <img src="./images/vase.webp" alt="" class="seller-one">
+                <p class="text-xl">Vases</p>
+                <span class="text-sm">1040+ Options, Starting at 179</span>
+            </div>
+            <div class="seller-item">
+                <img src="./images/accent.webp" alt="" class="seller-one">
+                <p class="text-xl">Table Decor and Accents</p>
+                <span class="text-sm">1000+ Options, Starting at 179</span>
+            </div>
+        </div>
+    </section>
+    <div>
+        <img src="./images/beauty.webp" alt="" class="w-100">
+    </div>
+    <section class="dining-decor  m-16 py-8">
+        <div class="best-sellar-header p-8">
+            <h1 class="text-center  text-2xl home-h1 md:text-2xl lg:text-3xl  home-h1">Dining Decor</h1>
+            <p class="text-center">Decor your dining with us</p>
+        </div>
+        <div
+            class="dining-content grid grid-cols-1 grid-rows-1 gap-4 p-16 md:grid-cols-2 grid-rows-1 gap-4 lg:grid-cols-5 grid-rows-1 gap-4 justify-center item-center pt-4">
+
+            <div class="dining-item">
+                <img class="dining-img" src="./images/dining-decor-one.jpg" alt="">
+                <p class="text-center">trays</p>
+                <p class="text-center text-xs">starts ₹776</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d2.jpg" alt="">
+                <p class="text-center">Dinner Sets</p>
+                <p class="text-center text-xs">starts ₹723</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d3.jpg" alt="">
+                <p class="text-center">Coffee Mug</p>
+                <p class="text-center text-xs">starts ₹276</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d4.jpg" alt="">
+                <p class="text-center">teapots</p>
+                <p class="text-center text-xs">starts ₹234</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d5.jpg" alt="">
+                <p class="text-center">Tissue Box</p>
+                <p class="text-center text-xs">starts ₹350</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d6.jpg" alt="">
+                <p class="text-center">SPice Box</p>
+                <p class="text-center text-xs">starts ₹276</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d7.jpg" alt="">
+                <p class="text-center">Cultery Holder</p>
+                <p class="text-center text-xs">starts ₹376</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d8.jpg" alt="">
+                <p class="text-center">Coaster</p>
+                <p class="text-center text-xs">starts ₹176</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d9.jpg" alt="">
+                <p class="text-center">Platters</p>
+                <p class="text-center text-xs">starts ₹276</p>
+            </div>
+            <div class="dining-item">
+                <img class="dining-img" src="./images/d10.jpg" alt="">
+                <p class="text-center">Table Ware</p>
+                <p class="text-center text-xs">starts ₹176</p>
+            </div>
+
+        </div>
+    </section>
+    <div class="img-section flex justify-center item-center"> <img src="./images/gifts.webp" class="w-100"
+            alt=""></div>
+    <section class="balcony-decor m-16">
+        <div class="outdoor-decor-header p-8">
+            <h1 class="text-center text-2xl home-h1 md:text-2xl lg:text-3xl ">Outdoor decor</h1>
+            <p class="text-center">plan your outdoor</p>
+        </div>
+        <div
+            class="outdoor-content grid grid-cols-1 grid-rows-1 gap-4 p-16 md:grid-cols-2 grid-rows-1 gap-4 lg:grid-cols-4 grid-rows-1 gap-4 justify-center item-center pt-4">
+            <div class="px-1 pt-2 outdoor-item ">
+                <img src="./images/outdoor-decor.jpg" alt="">
+                <h2 class="text-center">Artifical-flower</h2>
+                <p class="text-center text-xs ">₹556</p>
+            </div>
+            <div class="px-1 pt-2 outdoor-item">
+                <img src="./images/b2.jpg" alt="">
+                <h2 class="text-center">Plant stand</h2>
+                <p class="text-center text-xs">₹632
+                <P>
+            </div>
+            <div class="px-1 pt-2 outdoor-item">
+                <img src="./images/b3.jpg" alt="">
+                <h2 class="text-center">Hanging planters</h2>
+                <p class="text-center text-xs">₹656</p>
+            </div>
+            <div class="px-1 pt-2 outdoor-item">
+                <img src="./images/b4.jpg" alt="">
+                <h2 class="text-center ">fountain</h2>
+                <p class="text-center text-xs">₹556</p>
+            </div>
+
+
+
+        </div>
+    </section>
+    <div class="">
+        <img src="./images/Small-T_1349x.webp" alt="" class="w-100">
+    </div>
+    <section class="trends m-16" id="trend">
+        <div class="outdoor-decor-header p-8">
+            <h1 class="text-center text-2xl home-h1 md:text-2xl lg:text-3xl  home-h1">Follow Trends In Decor</h1>
+            <p class="text-center">Connect Deep with Decor World</p>
+        </div>
+        <div class="trends-container">
+            <div
+                class="trends-content grid grid-cols-1 grid-rows-1 gap-4 p-16 md:grid-cols-2 grid-rows-1 gap-4 lg:grid-cols-4 grid-rows-1 gap-4 justify-center item-center pt-4">
+                <div class="trends-item">
+                    <img class="t1-img" src="./images/trend1.webp" alt="">
+                    <div class="overlay">
+                        <div class="text ">
+                            <p>Cultivate your Dream Garden</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="trends-item">
+                    <img class="t1-img " src="./images/t2.webp" alt="">
+                    <div class="overlay">
+                        <div class="text ">
+                            <p>Ceramic Bliss Decor</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="trends-item">
+                    <img class="t1-img" src="./images/t3.webp" alt="">
+                    <div class="overlay">
+                        <div class="text ">
+                            <p>Timeless Terracotta</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="trends-item">
+                    <img class="t1-img" src="./images/t5.webp" alt="">
+                    <div class="overlay">
+                        <div class="text ">
+                            <p>Collectibles that Tell a Story</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="brands m-16">
+        <div class="outdoor-decor-header p-8">
+            <h1 class="text-center text-2xl home-h1 md:text-2xl lg:text-3xl  home-h1">Explore Popular Brands</h1>
+        </div>
+        <div class="brand-container">
+            <div
+                class="brand-content  grid grid-cols-1 grid-rows-1 gap-4 p-16 md:grid-cols-2 grid-rows-1 gap-4 lg:grid-cols-6 grid-rows-1 gap-4 justify-center item-center pt-2">
+
+                <div class="brand-div">
+                    <img class="dining-img" src="./images/br2.webp" alt="">
+                </div>
+                <div class="">
+                    <img class="dining-img" src="./images/brand1.webp" alt="">
+
+                </div>
+                <div class="">
+                    <img class="dining-img" src="./images/br3.webp" alt="">
+
+                </div>
+                <div class="">
+                    <img class="dining-img" src="./images/br4.webp" alt="">
+
+                </div>
+                <div class="">
+                    <img class="dining-img" src="./images/brand9.jpg" alt="">
+
+                </div>
+                <div class="">
+                    <img class="dining-img" src="./images/brand5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer  py-4  grid grid-cols-1 grid-rows-1 gap-4">
+        <div class="footer-content  ">
+            <div
+                class="footer-contents-item grid grid-cols-1 grid-rows-1 gap-4 px-16 md:grid-cols-3 grid-rows-1 gap-4 lg:grid-cols-5 grid-rows-1 gap-4 justify-center item-center ">
+                <div class="footer-div">
+                    <ul class="footer-one px-4">
+                        <h1 class="footer-header py-2">Corporate</h1>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">About Us</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Corporate Governance</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Pepperfry in the News</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div">
+                    <ul class="footer-one px-4">
+                        <h1 class="footer-header py-2">Useful Links</h1>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Custom Furniture</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Exporters</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Discover Our Brands
+                            </a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Check Out Bonhomie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div">
+                    <ul class="footer-one px-4">
+                        <h1 class="footer-header py-2">Partner With Us</h1>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Sell on Pepperfry
+                            </a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Become a Franchisee</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Become Our Channel Partner</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Become Our Channel Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div">
+                    <ul class="footer-one px-4">
+                        <h1 class="footer-header py-2">Shop Built Safe Products
+
+                        </h1>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Kids & Pet Friendly</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Certified Non-Toxic</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Scratch Resistant Finish</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Scratch Resistant Finish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div">
+                    <ul class="footer-one px-4">
+                        <h1 class="footer-header py-2">Need Help?
+
+                        </h1>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">FAQs
+                            </a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Contact Us</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">Policies</a></li>
+                        <li class="footer-item text-sm"><a href="" class="footer-links">complaints</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="footer-description grid grid-cols-1 grid-rows-1 gap-6 py-8 md:grid-cols-3 grid-rows-1 gap-6 lg:grid-cols-3 grid-rows-1 gap-4 ">
+            <div class="description1 px-4">
+                <h1 class="footer-header">Popular Categories</h1>
+                <p class="text-justify text-sm  foot">
+                    Sofas,Sectional Sofas,Sofa Sets,Queen Size Beds,King Size Beds,Coffee Tables,Dining
+                    Sets,Recliners,Sofa Cum Beds,Queen Size Mattresses,Cabinets & Sideboards,Book Shelves,TV & Media
+                    Units,Wardrobes,Foldable Mattresses,Pillows,Wall Shelves,Photo Frames,Bed Sheets,Table Linen,Study
+                    Tables,Office Furniture,Dining Tables,Carpets,Wall Decor</p>
+            </div>
+            <div class="description1 px-4">
+                <h1 class="footer-header">Popular Categories</h1>
+                <p class="text-justify text-sm  foot">
+                    Sofas,Sectional Sofas,Sofa Sets,Queen Size Beds,King Size Beds,Coffee Tables,Dining
+                    Sets,Recliners,Sofa Cum Beds,Queen Size Mattresses,Cabinets & Sideboards,Book Shelves,TV & Media
+                    Units,Wardrobes,Foldable Mattresses,Pillows,Wall Shelves,Photo Frames,Bed Sheets,Table Linen,Study
+                    Tables,Office Furniture,Dining Tables,Carpets,Wall Decor</p>
+            </div>
+            <div class="description1 px-4">
+                <h1 class="footer-header">Popular Categories</h1>
+                <p class="text-justify text-sm foot">
+                    Sofas,Sectional Sofas,Sofa Sets,Queen Size Beds,King Size Beds,Coffee Tables,Dining
+                    Sets,Recliners,Sofa Cum Beds,Queen Size Mattresses,Cabinets & Sideboards,Book Shelves,TV & Media
+                    Units,Wardrobes,Foldable Mattresses,Pillows,Wall Shelves,Photo Frames,Bed Sheets,Table Linen,Study
+                    Tables,Office Furniture,Dining Tables,Carpets,Wall Decor</p>
+            </div>
+
+        </div>
+        <hr>
+    </footer>
 </body>
+
 </html>
