@@ -1,7 +1,12 @@
-**Ecommerce website**
-A simple, responsive e-commerce website built using HTML and Tailwind CSS. <br>
+## Ecommerce website
 
-HTML5 – Markup for structure <br>
-Tailwind CSS – Utility-first CSS framework for styling <br>
+A **simple, responsive e-commerce website** built using **HTML** and **Tailwind CSS**.   
+- HTML5 – Markup for structure Tailwind CSS
+- Utility-first CSS framework for styling
+---
+##  Live Demo
+Check out the live version here: [🌐 Live Demo](https://wooden-street.netlify.app/)
 
-[Live Demo](https://wooden-street.netlify.app/)
+
+
+
